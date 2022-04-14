@@ -14,6 +14,7 @@ server.use(cors())
 
 server.get('/', (req, res) => {
     res.json({MESSAGE: process.env.MESSAGE})
+    res.json({ABC: process.env.ABC})
 })
 
 module.exports = server
